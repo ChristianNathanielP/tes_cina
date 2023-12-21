@@ -25,32 +25,40 @@ include 'connection.php';
     </head>
 <body>
 
-<header>
-    <!-- Logo dan Search Bar -->
-    <div class="wrapper-logo">
-    <div class="logo">
-        <a href="#first">
+<nav class="navbar navbar-expand-lg navbar-dark bg-info p-3">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="home.php">
             <span class="logo__1">Cina</span>
             <span class="logo__2">Flix</span>
         </a>
-        <!-- Search bar tidak berfungsi -->
+
         <div class="search">
-        <input type="text" class="form-control" placeholder="Search here...">
-        <button class="btn btn-dark"><i class="fa-solid fa-magnifying-glass" style="color: #ffffff;"></i></button>
+            <input type="text" class="form-control" placeholder="Search here...">
+            <button class="btn btn-dark"><i class="fa-solid fa-magnifying-glass" style="color: #ffffff;"></i></button>
+        </div>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class=" collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav ms-auto ">
+                
+                <li class="nav-item">
+                    <button><a class="nav-link mx-2" href="home.php">Home</a></button>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link mx-2" href="logout.php">Logout</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link mx-2" href="edit.php">Edit</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link mx-2" href="#footer">About Us</a>
+                </li>
+            </ul>
         </div>
     </div>
-    </div>
-    
-    <!-- Navigasi -->
-    <nav>
-        <ul class="nav__ul">
-            <li><button><a href="#first">Home</a></button></li>
-            <li><a href="logout.php">Logout</a></li>
-            <li><a href="edit.php">Edit</a></li>
-            <li><a href="#footer">About Us</a></li>
-        </ul>
-    </nav>
-</header>
+</nav>
 
 <!-- Container main -->
 <main class="container">
@@ -73,47 +81,47 @@ include 'connection.php';
 
         <div class="carousel-inner">
         <!-- Carousel content 1 -->
-        <div class="carousel-item active" style="width: 100%; height: 550px;">
-            <img src="https://pifa.co.id/img_berita/1693382609.webp" class="d-block w-100 br-30" alt="...">
+        <div class="carousel-item active" >
+            <img src="https://cdn.teater.co/imgs/review-jatuh-cinta-seperti-di-film-film-2023_890_490.webp" class="d-block w-100 br-30" alt="...">
             <div class="carousel-caption d-none d-md-block">
-            <h5>His Only Son</h5>
-            <p>2023 ‧ Drama/Drama ‧ 1 j 45 m</p>
+            <h5>Jatuh Cinta Seperti Di Film-Film</h5>
+            <p>2023 ‧ Roman/Komedi ‧ 1 j 58 m</p>
             <p><i class="fa-solid fa-star fa-fade" style="color: #ffea00;"></i> 5/5</p>
             </div>
         </div>
         <!-- Carousel content 2 -->
-        <div class="carousel-item" style="width: 100%; height: 550px;">
-            <img src="https://awsimages.detik.net.id/community/media/visual/2023/05/15/film-petualangan-sherina-2_169.jpeg?w=600&q=90" class="d-block" style="height: 100%; width: 100%;" alt="...">
+        <div class="carousel-item" >
+            <img src="https://akm-img-a-in.tosshub.com/indiatoday/images/story/202307/wonka-sixteen_nine.jpg?VersionId=hoEXTrvkL1rXIJ5IQB.iNNpQqtKA0oqw&size=690:388" class="d-block" style="height: 100%; width: 100%;" alt="...">
             <div class="carousel-caption d-none d-md-block">
-            <h5>Petualangan Sherina 2</h5>
-            <p>2023 ‧ Drama/Laga ‧ 2 j 6 m</p>
+            <h5>Wonka</h5>
+            <p>2023 ‧ Fantasi/Musikal ‧ 1 j 56 m</p>
             <p><i class="fa-solid fa-star fa-fade" style="color: #ffea00;"></i> 4.5/5</p>
             </div>
         </div>
         <!-- Carousel content 3 -->
-        <div class="carousel-item" style="width: 100%; height: 550px;">
-            <img src="https://awsimages.detik.net.id/community/media/visual/2023/07/06/di-ambang-kematian_169.jpeg?w=1200" class="d-block" style="height: 100%; width: 100%;" alt="...">
+        <div class="carousel-item" >
+            <img src="https://awsimages.detik.net.id/community/media/visual/2023/11/23/film-172-days_169.jpeg?w=600&q=90" class="d-block" style="height: 100%; width: 100%;" alt="...">
             <div class="carousel-caption d-none d-md-block">
-            <h5>Diambang Kematian</h5>
-            <p>2023 ‧ Horor/Cerita seru ‧ 1 j 37 m</p>
+            <h5>172 Days</h5>
+            <p>2023 ‧ Roman/Drama ‧ 1 j 43 m</p>
             <p><i class="fa-solid fa-star fa-fade" style="color: #ffea00;"></i> 4.5/5</p>
             </div>
         </div>
         <!-- Carousel content 4 -->
-        <div class="carousel-item" style="width: 100%; height: 550px;">
-            <img src="https://idseducation.com/wp-content/uploads/2022/07/the-marvels2.jpeg" class="d-block" style="height: 100%; width: 100%;" alt="...">
+        <div class="carousel-item" >
+            <img src="https://rentak.id/wp-content/uploads/2023/12/image_search_1703067684769.jpg" class="d-block" style="height: 100%; width: 100%;" alt="...">
             <div class="carousel-caption d-none d-md-block">
-            <h5>The Marvels</h5>
-            <p>2023 ‧ Petualangan/Laga ‧ 1 j 45 m</p>
+            <h5>Aquaman and the Lost Kingdom</h5>
+            <p>2023 ‧ Laga/Fantasi ‧ 2 j 4 m</p>
             <p><i class="fa-solid fa-star fa-fade" style="color: #ffea00;"></i> 4/5</p>
             </div>
         </div>
         <!-- Carousel content 5 -->
-        <div class="carousel-item" style="width: 100%; height: 550px;">
-            <img src="https://dx35vtwkllhj9.cloudfront.net/universalstudios/five-nights-at-freddys/images/regions/us/header.jpg" class="d-block" style="height: 100%; width: 100%;" alt="...">
+        <div class="carousel-item" >
+            <img src="https://d1tgyzt3mf06m9.cloudfront.net/v3-staging/2023/12/maxresdefault-2-1024x576.jpg" class="d-block" style="height: 100%; width: 100%;" alt="...">
             <div class="carousel-caption d-none d-md-block">
-            <h5>Five Nights at Freddy's</h5>
-            <p>2023 ‧ Horor/Adaptasi ‧ 1 j 49 m</p>
+            <h5>Siksa Neraka</h5>
+            <p>2023 ‧ Horor ‧ 1 j 38 m</p>
             <p><i class="fa-solid fa-star fa-fade" style="color: #ffea00;"></i> 4.5/5</p>
             </div>
         </div>
@@ -144,11 +152,11 @@ include 'connection.php';
             echo '<div class="card">';
             echo '<img src="' . $row['Photo'] . '" class="card-img-top" alt="Movie Poster">';
             echo '<div class="card-body">';
-            echo '<a href="delete.php?name=' . $row['Movie_name'] . '" class="trash"><i class="fa-solid fa-trash" style="color: #e20000;"></i></a>';
+            echo '<a href="delete.php?name=' . $row['Movie_name'] . '" class="trash"><i class="fa-solid fa-trash"></i></a>';
             echo '<span>';
-            echo '<p>' . $row['Movie_name'] . '</p>';
-            echo '<p style="font-size: 10px;">' . $row['Genre'] . '</p>';
-            echo '<p style="font-size: 12px;"><i class="fa-solid fa-star" style="color: #ffc800;"></i>' . $row['Rating'] . '/5</p>';
+            echo '<p>' . ucwords($row['Movie_name']) . '</p>';
+            echo '<p class="genre">' . $row['Genre'] . '</p>';
+            echo '<p class="rating"><i class="fa-solid fa-star" style="color: #ffc800;"></i>' . $row['Rating'] . '/5</p>';
             echo '</span>';
             echo '</div>';
             echo '</div>';
@@ -170,11 +178,11 @@ include 'connection.php';
             echo '<div class="card">';
             echo '<img src="' . $row['Photo'] . '" class="card-img-top" alt="Movie Poster">';
             echo '<div class="card-body">';
-            echo '<a href="delete.php?name=' . $row['Movie_name'] . '" class="trash"><i class="fa-solid fa-trash" style="color: #e20000;"></i></a>';
+            echo '<a href="delete.php?name=' . $row['Movie_name'] . '" class="trash"><i class="fa-solid fa-trash"></i></a>';
             echo '<span>';
-            echo '<p>' . $row['Movie_name'] . '</p>';
-            echo '<p style="font-size: 10px;">' . $row['Genre'] . '</p>';
-            echo '<p style="font-size: 12px;"><i class="fa-solid fa-star" style="color: #ffc800;"></i>' . $row['Rating'] . '/5</p>';
+            echo '<p>' . ucwords($row['Movie_name']) . '</p>';
+            echo '<p class="genre">' . $row['Genre'] . '</p>';
+            echo '<p class="rating"><i class="fa-solid fa-star" style="color: #ffc800;"></i>' . $row['Rating'] . '/5</p>';
             echo '</span>';
             echo '</div>';
             echo '</div>';
@@ -197,11 +205,11 @@ include 'connection.php';
             echo '<div class="card">';
             echo '<img src="' . $row['Photo'] . '" class="card-img-top" alt="Movie Poster">';
             echo '<div class="card-body">';
-            echo '<a href="delete.php?name=' . $row['Movie_name'] . '" class="trash"><i class="fa-solid fa-trash" style="color: #e20000;"></i></a>';
+            echo '<a href="delete.php?name=' . $row['Movie_name'] . '" class="trash"><i class="fa-solid fa-trash"></i></a>';
             echo '<span>';
-            echo '<p>' . $row['Movie_name'] . '</p>';
-            echo '<p style="font-size: 10px;">' . $row['Genre'] . '</p>';
-            echo '<p style="font-size: 12px;"><i class="fa-solid fa-star" style="color: #ffc800;"></i>' . $row['Rating'] . '/5</p>';
+            echo '<p>' . ucwords($row['Movie_name']) . '</p>';
+            echo '<p class="genre">' . $row['Genre'] . '</p>';
+            echo '<p class="rating"><i class="fa-solid fa-star" style="color: #ffc800;"></i>' . $row['Rating'] . '/5</p>';
             echo '</span>';
             echo '</div>';
             echo '</div>';
@@ -223,11 +231,11 @@ include 'connection.php';
             echo '<div class="card">';
             echo '<img src="' . $row['Photo'] . '" class="card-img-top" alt="Movie Poster">';
             echo '<div class="card-body">';
-            echo '<a href="delete.php?name=' . $row['Movie_name'] . '" class="trash"><i class="fa-solid fa-trash" style="color: #e20000;"></i></a>';
+            echo '<a href="delete.php?name=' . $row['Movie_name'] . '" class="trash"><i class="fa-solid fa-trash"></i></a>';
             echo '<span>';
-            echo '<p>' . $row['Movie_name'] . '</p>';
-            echo '<p style="font-size: 10px;">' . $row['Genre'] . '</p>';
-            echo '<p style="font-size: 12px;"><i class="fa-solid fa-star" style="color: #ffc800;"></i>' . $row['Rating'] . '/5</p>';
+            echo '<p>' . ucwords($row['Movie_name']) . '</p>';
+            echo '<p class="genre">' . $row['Genre'] . '</p>';
+            echo '<p class="rating"><i class="fa-solid fa-star" style="color: #ffc800;"></i>' . $row['Rating'] . '/5</p>';
             echo '</span>';
             echo '</div>';
             echo '</div>';
@@ -249,11 +257,11 @@ include 'connection.php';
             echo '<div class="card">';
             echo '<img src="' . $row['Photo'] . '" class="card-img-top" alt="Movie Poster">';
             echo '<div class="card-body">';
-            echo '<a href="delete.php?name=' . $row['Movie_name'] . '" class="trash"><i class="fa-solid fa-trash" style="color: #e20000;"></i></a>';
+            echo '<a href="delete.php?name=' . $row['Movie_name'] . '" class="trash"><i class="fa-solid fa-trash"></i></a>';
             echo '<span>';
-            echo '<p>' . $row['Movie_name'] . '</p>';
-            echo '<p style="font-size: 10px;">' . $row['Genre'] . '</p>';
-            echo '<p style="font-size: 12px;"><i class="fa-solid fa-star" style="color: #ffc800;"></i>' . $row['Rating'] . '/5</p>';
+            echo '<p>' . ucwords($row['Movie_name']) . '</p>';
+            echo '<p class="genre">' . $row['Genre'] . '</p>';
+            echo '<p class="rating"><i class="fa-solid fa-star" style="color: #ffc800;"></i>' . $row['Rating'] . '/5</p>';
             echo '</span>';
             echo '</div>';
             echo '</div>';

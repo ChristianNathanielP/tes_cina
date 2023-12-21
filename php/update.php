@@ -12,6 +12,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
     $sql = "UPDATE movie SET Genre='$genre', Photo='$photo', Rating='$rating', Category='$category' WHERE Movie_Name='$name'";
 
+    $nameCapitalized = ucwords($name);
+
     if ($conn->query($sql) === TRUE) {
         $updateMessage = "Update successful";
 
