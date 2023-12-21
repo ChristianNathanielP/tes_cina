@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@200;400&family=Mochiy+Pop+One&family=Montserrat:wght@400;500;600&display=swap');
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: #000000 !important;
+    font-family: 'Montserrat', sans-serif;
+    scroll-behavior: smooth;
+}
+
+/* Navbar */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 40px;
+    position: fixed-top;
+    width: 100%;
+    height: 80px;
+    background: rgb(0,0,0);
+    background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(28,28,28,0.9529061624649859) 95%);
+}
+.wrapper-logo {
+    width: 50%;
+    align-items: center;
+}
+
+.logo a{
+    text-decoration: none;
+
+}
+.logo__1, .logo__2{
+    font-family: 'Kanit', sans-serif !important;
+    font-size: 30px;
+    font-weight: 400;
+    color: #ffff;
+    text-decoration: none;
+} 
+
+.logo__1{
+    font-weight: 400;
+}
+
+.logo__2 {
+    font-weight: 200;
+    color: #D22B2B;
+}
+
+.judul span {
+    font-size: 25px;
+    color: #D2042D;
+}
+.judul h1 {
+    display: inline-block;
+    color: #fff;
+    font-weight: 500;
+    font-size: 25px;
+    margin-bottom: 15px;
+}
+
+.proses {
+    display: flex;
+    justify-content: center;
+}
+.proses form {
+    width: 100%;
+}
+.proses label {
+    color: #fff;
+    font-size: 1rem;
+}
+
+.proses input, .proses select {
+    background-color: #444444;
+    border: #444444;
+    color: #fff;
+}
+.proses input::placeholder{
+    color: #fff ;
+}
+.proses input:focus,
+.proses select:focus {
+    background-color: #171717;
+    color: #ffffff;
+    outline: none;
+    box-shadow: 0 0 0 2px #171717; 
+}
+
+footer {
+    background-color: #0a0a0a;
+}
+.wrap-footer{
+    padding-top: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-1 {
+    text-align: center;
+    color: #ffff;
+    width: 60%;
+}
+.footer-2 {
+    width: 40%;
+    text-align: center;
+}
+.footer-2 a{
+    text-decoration: none;
+}
+.footer-2 a i{
+    font-size: 30px;
+    margin: 30px 20px 0;
+}
+.copyright {
+    padding-bottom: 15px;
+    text-align: center;
+    font-size: 13px;
+    color: #ffff;
+}
+.copyright p {
+    margin: 0;
+}
